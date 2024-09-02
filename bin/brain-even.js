@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import sayHello from '../src/cli.js';
-import isEven from '../src/even.js';
+import brainEven from '../src/games/even.js';
 
-// sayHello();
-isEven();
+brainEven();
