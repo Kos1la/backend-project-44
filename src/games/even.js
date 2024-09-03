@@ -1,7 +1,6 @@
 import { runGame, randomNum } from '../index.js';
 
-const description =
-  'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateQuestion = () => {
   const number = randomNum(1, 100);

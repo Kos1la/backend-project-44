@@ -3,14 +3,16 @@ import { runGame, randomNum } from '../index.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
-  while (a !== 0 && b !== 0) {
-    if (a > b) {
-      a = a % b;
+  let num1 = a;
+  let num2 = b;
+  while (num1 !== 0 && num2 !== 0) {
+    if (num1 > num2) {
+      num1 %= num2;
     } else {
-      b = b % a;
+      num2 %= num1;
     }
   }
-  return a + b;
+  return num1 + num2;
 };
 
 const generateQuestion = () => {

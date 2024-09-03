@@ -7,8 +7,7 @@ export const sayHello = () => {
   return name;
 };
 
-export const randomNum = (min, max) =>
-  Math.floor(Math.random() * (max - min) + min);
+export const randomNum = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 export const runGame = (description, generateQuestion) => {
   const userName = sayHello();
@@ -27,9 +26,7 @@ export const runGame = (description, generateQuestion) => {
       console.log('Correct!');
       correctAnswerCount += 1;
     } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-      );
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }

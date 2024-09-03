@@ -1,4 +1,3 @@
-import { question } from 'readline-sync';
 import { runGame, randomNum } from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -8,7 +7,7 @@ const generateArray = (start, step) => {
 
   array.push(start);
 
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 9; i += 1) {
     array.push(array[i] + step);
   }
   return array;

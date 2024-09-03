@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/003d78b674feebd598fb/maintainability)](https://codeclimate.com/github/Kos1la/backend-project-44/maintainability)
 
-[![asciicast](https://asciinema.org/a/BJsjNI2Henq3vkzvDCq2wcgZ8.svg)](https://asciinema.org/a/BJsjNI2Henq3vkzvDCq2wcgZ8)
+[![asciicast](https://asciinema.org/a/sJB7SvtmzrSr0zekDyBmExvOI.svg)](https://asciinema.org/a/sJB7SvtmzrSr0zekDyBmExvOI)
