@@ -19,7 +19,7 @@ const generateQuestion = () => {
 
   const array = generateArray(start, step);
 
-  const hiddenNum = randomNum(0, 9); // array.length -1
+  const hiddenNum = randomNum(0, array.length - 1);
 
   const correctAnswer = array[hiddenNum];
   array[hiddenNum] = '..';

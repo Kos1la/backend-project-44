@@ -13,7 +13,7 @@ const isPrime = (num) => {
 
 const generateQuestion = () => {
   const number = randomNum(1, 1000);
-  let correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
   return {
     question: `${number}`,
