@@ -15,18 +15,15 @@ const gcd = (a, b) => {
   return num1 + num2;
 };
 
-const generateQuestion = () => {
+const qenerateRound = () => {
   const num1 = randomNum(1, 100);
   const num2 = randomNum(1, 100);
+  const question = `${num1} ${num2}`;
+  const correctAnswer = gcd(num1, num2).toString();
 
-  const correctAnswer = gcd(num1, num2);
-
-  return {
-    question: `${num1} ${num2}`,
-    correctAnswer: correctAnswer.toString(),
-  };
+  return [question, correctAnswer];
 };
 
-const brainGcd = () => runGame(description, generateQuestion);
+const brainGcd = () => runGame(description, qenerateRound);
 
 export default brainGcd;

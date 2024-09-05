@@ -13,23 +13,20 @@ const generateArray = (start, step) => {
   return array;
 };
 
-const generateQuestion = () => {
+const generateRound = () => {
   const start = randomNum(1, 10);
   const step = randomNum(2, 10);
 
   const array = generateArray(start, step);
-
   const hiddenNum = randomNum(0, array.length - 1);
 
-  const correctAnswer = array[hiddenNum];
+  const correctAnswer = array[hiddenNum].toString();
   array[hiddenNum] = '..';
+  const question = array.join(' ');
 
-  return {
-    question: array.join(' '),
-    correctAnswer: correctAnswer.toString(),
-  };
+  return [question, correctAnswer];
 };
 
-const brainProgression = () => runGame(description, generateQuestion);
+const brainProgression = () => runGame(description, generateRound);
 
 export default brainProgression;

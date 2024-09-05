@@ -11,16 +11,14 @@ const isPrime = (num) => {
   return true;
 };
 
-const generateQuestion = () => {
+const generateRound = () => {
   const number = randomNum(1, 1000);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const question = `${number}`;
 
-  return {
-    question: `${number}`,
-    correctAnswer,
-  };
+  return [question, correctAnswer];
 };
 
-const brainPrime = () => runGame(description, generateQuestion);
+const brainPrime = () => runGame(description, generateRound);
 
 export default brainPrime;
