@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import randomNum from '../../myFunctions/randomNum.js';
+import randomNum from '../myFunctions/randomNum.js';
 
 const description = 'What number is missing in the progression?';
 const arrayLength = 10;
